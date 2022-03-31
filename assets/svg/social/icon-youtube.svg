@@ -1,0 +1,18 @@
+<svg role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" aria-hidden="{{ include.hidden }}"
+    width="50" height="50" viewBox="0 0 48 48"
+    aria-labelledby="youtubeTitle--{{ include.id | strip }} youtubeDesc--{{ include.id | strip }}"
+    id="youtube--{{ include.id | strip }}">
+
+    <title id="youtubeTitle--{{ include.id | strip }}">Youtube</title>
+    <desc id="youtubeDesc--{{ include.id | strip }}">La imágen de marca de Youtube es un triángulo blanco dentro de un rectángulo rojo simulando el botón inicio de un reproductor.</desc>
+    <style type="text/css">
+        .a--youtube {
+            fill: rgb(255,0,0);
+        }
+        .b--youtube {
+           fill: #fff;
+        }
+    </style>
+        <path d="M43.2 33.9C42.8 36 41.1 37.6 39 37.9 35.7 38.4 30.2 39 24 39 17.9 39 12.4 38.4 9 37.9 6.9 37.6 5.2 36 4.8 33.9 4.4 31.6 4 28.2 4 24 4 19.8 4.4 16.4 4.8 14.1 5.2 12 6.9 10.4 9 10.1 12.3 9.6 17.8 9 24 9 30.2 9 35.6 9.6 39 10.1 41.1 10.4 42.8 12 43.2 14.1 43.6 16.4 44.1 19.8 44.1 24 44 28.2 43.6 31.6 43.2 33.9Z" class="a--youtube" />
+        <path d="M20 31L20 17 32 24Z" class="b--youtube" />
+</svg>

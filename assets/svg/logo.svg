@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="webusable" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="247.667px" height="165px" viewBox="0 0 247.667 165" style="enable-background:new 0 0 247.667 165;" xml:space="preserve"
+	>
+<style type="text/css">
+<![CDATA[
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#AA3C39;}
+	.st1{fill:#557714;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#557714;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#226666;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#003133;}
+]]>
+</style>
+<g id="web">
+	<path id="w1_2_" class="st2" d="M38.146,64.5H3.334c16.309,32.906,52.163,97.528,54.067,97.531l3.898-46.717
+		C53.623,98.463,45.934,81.591,38.146,64.5z"/>
+	<path id="w2a" class="st5" d="M70.165,39.455c-0.039,0.015-0.077,0.029-0.115,0.043c-2.06,24.94-4.081,49.417-6.1,73.868
+		c-0.13,1.58-0.261,3.161-0.392,4.741c-0.078-0.002-0.156-0.005-0.233-0.007l-3.667,43.935c9.293,0.012,18.366,0.024,27.565,0.037
+		c3.285-21.999,6.497-43.515,9.897-66.299c0.213-1.427,0.424-2.843,0.639-4.281L70.165,39.455z"/>
+	<path id="w2b" class="st4" d="M114.635,39.417H70.267c-0.034,0.013-0.068,0.025-0.102,0.038L97.76,91.491
+		c0.001-0.008,0.002-0.017,0.003-0.025c13.417,24.496,41.583,70.73,43.011,70.733l8.776-57.196
+		C137.946,83.207,126.335,61.395,114.635,39.417z"/>
+	<path id="w3_3_" class="st0" d="M243.698,3.166h-76.077c-5.312,34.671-10.595,69.168-15.879,103.664
+		c-0.065,0.002-8.692,55.374-8.692,55.374c18.072,0.033,35.792,0.066,53.855,0.099C212.529,109.167,228.012,56.511,243.698,3.166z"
+		/>
+</g>
+<g id="ok_1_">
+	<path id="fondo" class="st1" d="M211.698,59.167c-17.672,0-32,14.328-32,32s14.328,32,32,32s32-14.328,32-32
+		S229.37,59.167,211.698,59.167z"/>
+	<path id="check" class="st3" d="M206.737,105.932l-14.723-14.727l5.656-5.656l9.066,9.07l19.234-19.234l5.656,5.656
+		L206.737,105.932z"/>
+</g>
+</svg>

@@ -1,0 +1,13 @@
+<svg role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" aria-hidden="{{ include.hidden }}"
+    width="24" height="24" viewBox="0 0 24 24"
+    aria-labelledby="shareTitle--{{ include.id | strip }} shareDesc--{{ include.id | strip }}"
+    id="share--{{ include.id | strip }}">
+
+    <title id="shareTitle--{{ include.id | strip }}">Compartir (share)</title>
+    <desc id="shareDesc--{{ include.id | strip }}">El típico logo de compartir en la red son 3 puntos gordos de un triángulo equilátero a 45 grados, unidos por 2 finas líneas (superior e inferior, no hay línea de unión entre los puntos de la derecha)</desc>
+
+    <circle cx="6" cy="12" r="4" />
+    <circle cx="18" cy="6" r="4" />
+    <circle cx="18" cy="18" r="4" />
+    <polyline fill="none" points="18,6 6,12 18,18 " stroke="#000000" stroke-miterlimit="10" stroke-width="2" />
+</svg>

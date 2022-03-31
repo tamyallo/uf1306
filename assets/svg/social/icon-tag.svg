@@ -1,0 +1,10 @@
+<svg role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" aria-hidden="{{ include.hidden }}"
+    width="1792" height="1792" viewBox="0 0 1792 1792"
+    aria-labelledby="tagTitle--{{ include.id | strip }} tagDesc--{{ include.id | strip }}"
+    id="tag--{{ include.id | strip }}">
+
+    <title id="tagTitle--{{ include.id | strip }}">Etiqueta</title>
+    <desc id="tagDesc--{{ include.id | strip }}">Dibujo de etiqueta web (tag). Simula la silueta de una etiqueta antigua donde se escribía a mano la descripción del contenido de un paquete. La parte superior acabada en punta con un agujero por el que se pasaba una goma o cordel que la sujetaba a su caja.</desc>
+
+    <path d="M576 448q0-53-37.5-90.5t-90.5-37.5-90.5 37.5-37.5 90.5 37.5 90.5 90.5 37.5 90.5-37.5 37.5-90.5zm1067 576q0 53-37 90l-491 492q-39 37-91 37-53 0-90-37l-715-716q-38-37-64.5-101t-26.5-117v-416q0-52 38-90t90-38h416q53 0 117 26.5t102 64.5l715 714q37 39 37 91z" />
+</svg>

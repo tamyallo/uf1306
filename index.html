@@ -1,0 +1,225 @@
+<!-- Declaración del tipo de documento HTML, siempre en la 1ª línea -->
+<!DOCTYPE html>
+<!-- Elemento html. Atributos lenguaje y dirección de lectura -->
+<html lang="es" dir="ltr">
+<!-- Cabecera oculta del documento web que solo ven los robots -->
+
+<head>
+    <!-- Juego de caracteres de casi todos los idiomas humanos (incluidos ñ, tildes ...) -->
+    <meta charset="utf-8" />
+    <!-- Escala inicial y renderizado _responsive_ por el ancho del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compatibilidad con Microsoft Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Indéxame NO y sígueme NO -->
+    <meta name="robots" content="noIndex, noFollow" />
+    <!-- Breve descripción del sitio que se verá en los resultados de búsqueda -->
+    <meta name="description" content="Sitio web de prueba elaborado en el curso de Confección y Publicación de Páginas Web (IFCD0110). Unidad Formativa UF1306 Pruebas de funcionalidades y optimización de páginas web" />
+    <!-- Ruta al favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <!-- Ruta a las hojas de estilos -->
+    <link rel="stylesheet" type="text/css" href="assets/css/application.css" />
+    <!-- Título de la pestaña del navegador -->
+    <title>UF1306 | Pruebas de funcionalidades y optimización de páginas web</title>
+</head>
+
+<body>
+    <!-- El header es la cabecera de la página web lleva el único encabezado h1 de la página -->
+    <header>
+        <a href="index.html" title="Página principal">
+            <figure class="logo"></figure>
+            <h1>Pruebas de funcionalidades y optimización de páginas web (UF1306)</h1>
+        </a>
+        <!-- Slogan -->
+        <p class="pechado">Curso de Confección Publicación de Páginas Web</p>
+    </header>
+    <nav>
+        <h2 class="pechado">Menú Principal</h2>
+        <input id="icon-menu" name="icon-menu" type="checkbox">
+        <label for="icon-menu" class="icon-menu" aria-label="Abrir/Pechar">Menú</label>
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li><a href="#">Temas</a>
+                <ul>
+                    <li>
+                        <a href="temas/formularios1.html">Formularios I</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Nosotros</a>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="tema textos agua justify">
+            <header class="portada" style="background-image: url('https://cdn.pixabay.com/photo/2016/11/17/23/29/programming-1832991_960_720.png');">
+                <h2>Pruebas y optimización de páginas web</h2>
+            </header>
+            <article class="article index">
+                <h3>Las tres capas del diseño web</h3>
+                <p>
+                    Los estándares Web fomentan la separación de un contenido Web en 3 capas:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Contenido</strong>:
+                        <span>
+                            Define estructura semántica y contenido de texto plano, se representa con el documento HTML.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Presentación</strong>:
+                        <span>
+                            Añade el aspecto del contenido, lo representa la hoja de estilo CSS
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Comportamiento</strong>:
+                        <span>
+                            Añade mayor grado de interacción y funciones complejas, es posible representarlo con un documento JS o de otras tecnologías semejantes
+                        </span>
+                    </li>
+                </ul>
+                <figure class="img">
+                    <img src="assets/img/index_capas-disenho-web.jpeg" alt="Descripcion de las capas del desarrollo web" />
+                    <figcaption>
+                        Fig.1.- Capas del diseño web: Estructura, Contenido, Apariencia y Comportamiento
+                    </figcaption>
+                </figure>
+                <p>
+                    Un documento html es un visualizador de la información.
+                </p>
+                <p>
+                    Para hacer más atractivo este documento html , podemos utilizar diversas posibilidades como: combinación de colores, distintos tipos de letras, fondo del documento, ubicación por coordenadas en píxeles de un determinado texto,
+                    etc. Todas esas posibilidades las tenemos en las hojas de estilo o Style Sheets. Las hojas de estilo son una extensión del documento HTML, en las que se diseña la apariencia general del mismo.
+                </p>
+                <p>
+                    Las principales ventajas de utilizar las hojas de estilo son:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Accesibilidad</strong>:
+                        <span>
+                            Los datos se pueden presentar en función del usuario y adaptarlos a sus necesidades. No es lo mismo presentar una web en un Pc, que presentarla en un teléfono móvil, o presentarla a personas con alguna discapacidad.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Mantenimiento</strong>:
+                        <span>
+                            Separa y centraliza la presentación, bien en diferentes archivos o en partes bien conocidas del archivo, con lo cual tenemos localizado el código que queremos mantener y/o actualizar
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Simplicidad</strong>:
+                        <span>
+                            Se obtienen documentos más fáciles de entender y se reduce el tamaño de los mismos.
+                        </span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="contentinfo justify">
+            <h2>Pruebas de funcionalidades y optimización de páginas web (UF1306)</h2>
+            <div role="group" class="justify">
+                <address>
+                    <ul>
+                        <li>
+                            <a href="https://goo.gl/maps/s3k1C7FEyn3WrrVn7" title="Ver onde estamos e tódalas formas de contacto" class="footer">
+                                <span class="icon-location" aria-hidden="true"></span>
+                                <span>Av. Coruña, 500 - Lugo (Galicia)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:ifcd0110@gmx.com" title="Enviar un correo dende este dispositivo" class="footer">
+                                <span class="icon-mail" aria-hidden="true"></span>
+                                <span>ifcd0110@gmx.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+3498222333" title="Chamar dende este dispositivo" class="footer">
+                                <span class="icon-telefono" aria-hidden="true"></span>
+                                <span>982 222 333</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+34666777888" title="Chamar xa dende este dispositivo" class="footer">
+                                <span class="icon-movil" aria-hidden="true"></span>
+                                <span>666 777 888</span>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+
+                <nav class="rss">
+                    <ul class="social">
+                        <li class="svg-icon rss">
+                            <a href="#" target="_blank" title="Canle RSS de artículos CSS" class="footer rss cross-centro">
+                                <span class="circulo"><svg role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" width="24" height="24" viewBox="0 0 24 24"
+                                        aria-hidden="true" aria-labelledby="rssTitle--footer rssDesc--footer" id="rss--footer">
+                                        <title id="rssTitle--footer">Feed </title>
+                                        <desc id="rssDesc--footer">A icona popularmente reconocida para a Sindicación de contenidos - RSS - é un punto na parte inferior esquerda máis dous cuartos de círculo simulando a emisión de ondas de radio
+                                        </desc>
+                                        <style>
+                                            #rss--footer {
+                                                background: none;
+                                                -webkit-transform: scale(0.8);
+                                                transform: scale(0.8);
+                                            }
+                                        </style>
+                                        <path
+                                            d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z">
+                                        </path>
+                                    </svg></span>
+                                <span class="texto">Artículos CSS vía RSS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a href="../index.html" target="_blank" title="Ver o sitio web de UF1303" class="no-border pattern abcenter">
+                <figure aria-label="Logo"></figure>
+            </a>
+        </section>
+
+        <section class="footer__pie cross-fin">
+            <h2 class="pechado">Menú á documentación legal e dereiros de usuarios</h2>
+
+            <ul class="">
+                <li class="validator cross-centro">
+                    <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcursos.webusable.ga%2F&amp;profile=css3svg&amp;usermedium=all&amp;warning=no&amp;vextwarning=true&amp;lang=es" target="_blank"
+                        title="Esta páxina web é un documento CSS versión 3 + SVG válido!" class="no-border">
+                        <figure style="background-image:url(/assets/svg/w3c/css.svg);" class="w3c" aria-label="Selo de Calidade Web: CSS 3 + SVG válido!"></figure>
+                    </a>
+                </li>
+                <!-- https://achecker.ca/checker/ -->
+                <li class="validator cross-centro">
+                    <a href="http://examinator.ws" target="_blank" title="Esta páxina web ten superado o nivel Triple-A de conformidad segundo as Pautas de Accesibilidade a Contenido Web 2.0 do Organismo W3C WAI WCAG 2.0" class="no-border">
+                        <figure style="background-image: url(/assets/svg/w3c/wcag.svg);" aria-label="Selo de Calidade Web: Superado WCAG 2.0 (Nivel AAA)! " class="w3c"></figure>
+                    </a>
+                </li>
+                <li class="validator cross-centro">
+                    <a href="https://html5.validator.nu" target="_blank" title="Este sitio web está desenrrolada en estructura e semántica HTML5 e con animacións i estilos CSS3" class="no-border">
+                        <figure style="background-image: url(/assets/svg/w3c/html5.svg);" aria-label="Selo de Calidade Web: Tecnoloxías HTML5, Semántica, CSS3, Responsive, Multimedia e con conexión offline por caché HTML5" class="xhtml5"></figure>
+                    </a>
+                </li>
+
+                <li class="cross-centro legal"><a href="#" title="Ler o Aviso Legal e a nosa Política de Privacidade" target="_blank" class="footer">Privacidade e Aviso Legal</a></li>
+
+                <li class="cross-centro legal"><a href="#" title="Ler os Termos de Uso" target="_blank" class="footer">Termos de Uso</a></li>
+
+                <li class="cross-centro legal"><a href="#" title="Ler a nosa Política de Protección de Datos Persoais" target="_blank" class="footer">Protección de Datos Persoais</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>
