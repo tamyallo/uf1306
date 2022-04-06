@@ -221,7 +221,7 @@ function validarObligatorio( elemento ) {
     @return: Booleano
 */
 
-function validarEmail ( elemento ) {
+function validarEmail( elemento ) {
 
     var expresionRegular =/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ ;
 
