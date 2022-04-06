@@ -53,13 +53,14 @@ window.onload = function() {
 
 function validarFormulario( enviar ) {
 
+    console.log('Hola');
+
     // Objetos document HTML del formulario
     var formulario = document.getElementById("form")
     var nombre = document.getElementById("name");
     var edad = document.getElementById("edad");
     var email = document.getElementById("email");
     var mensaje = document.getElementById("mensaje");
-    var tfno = document.getElementById("tfno");
 
     // Resultado de la validación: por defecto, FALSE
     var validacion = false;
@@ -69,8 +70,7 @@ function validarFormulario( enviar ) {
         validarSoloTexto( nombre )
         //&& validarNumero( edad, 0, 120 )
         && validarEmail( email )
-        && validarTelefono( tfno )
-        // && validarTextarea( mensaje, 3, 255 )
+        //&& validarTextarea( mensaje, 3, 255 )
         && confirm("¿Deseas enviar el formulario con estos datos?")
     ){
         // El código de error 0 Devuelve TRUE ( @return = true )
@@ -89,6 +89,8 @@ function validarFormulario( enviar ) {
     }
 
     // Booleano final de la validación (true | false )
+
+    console.log('Radiola');
     return validacion;
 }
 
@@ -158,16 +160,10 @@ function mensajeError ( error, elemento="", min=0, max=300, id="errores" ) {
         break;
 
         case 3:
-            texto += "El correo eléctronico no parece válido";
+            texto += "El correo electrónico no parece un email válido";
             etiquetaInfo.innerHTML = texto;
         break;
 
-        
-        case 4:
-            texto += "El teléfono no parece correcto. Escribe sólo números sin espacios";
-            etiquetaInfo.innerHTML = texto;
-        break;
-      
         // default:
     }
 
@@ -229,94 +225,31 @@ function validarObligatorio( elemento ) {
     @return: Booleano
 */
 
-function validarSoloTexto( elemento ) {
+function validarEmail( elemento ) {
 
-    // Espresión regular para aceptar sólo letras del alfabeto español
-    // y espacios en blanco
-
-    var expresionRegular = /^[a-zA-ZÑñáéíóúÁÉÍÓÚ\s]+$/;
-
-    // validarObligatorio() Escribe un mensaje de error en el DOM
-    // y devuelve true | false
+    var expresionRegular =/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ ;
 
     var validacion = validarObligatorio( elemento );
+    console.log('Validación en validarEmail(): ' + validacion + '\n');
 
     switch ( validacion ) {
 
-        // Si el valor de 'validacion' es TRUE significa que
-        // O no es obligagorio, o contiene algo
-
-        // Validación de campo obligatorio superada en case validacion = true
         case true:
-            // Se ejecuta la validación por expresión regular ( true | false )
+           
             var resultadoExpRegular = expresionRegular.exec( elemento.value );
 
-            // Si el resultado de la validación NO ES true
             if ( !resultadoExpRegular ) {
 
-                // Se ejecuta la función con el mensaje de error en DOM
-                // El mensajeError(2) inserta un mensaje de error en el DOM
-                // y retorna FALSE
-                validacion = mensajeError( 2, elemento );
-                // validacion = false;
+                validacion = mensajeError( 3, elemento );
+               
             }
         break;
 
-        // Si el valor de 'validacion' es FALSE no hay nada que hacer
-        // case false:
-        //     validacion = false
-        // break;
-
-        // default:
     }
 
-    // Se devuelve el resultado de la validación (true | false)
-    return validacion;
-}
-
-function validarEmail( elemento ) {
-
-  
-    var expresionRegular  =/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ ;
-
-    var validacion = validarObligatorio( elemento );
-
-    switch ( validacion ) {
-  
-        case true:
-            
-            var resultadoExpRegular = expresionRegular.exec( elemento.value );
-
-            
-            if ( !resultadoExpRegular ) { 
-                validacion = mensajeError( 3, elemento );    
-            }
-        break;  
-    }
+    console.log('Error: ' + error + '\n');
+    console.log('Validación: ' + validacion + '\n');
+    console.log('--------------------------------');
 
     return validacion;
 }
-
-function validarTelefono( elemento ) {
-
-    var expresionRegular = /^[6-9]{1}[0-9]{8}$/;
-
-    var validacion = validarObligatorio( elemento );
-
-    switch ( validacion ) {
-  
-        case true:
-            
-            var resultadoExpRegular = expresionRegular.exec( elemento.value );
-
-            
-            if ( !resultadoExpRegular ) { 
-                validacion = mensajeError( 4, elemento );    
-            }
-        break;  
-    }
-
-    return validacion;
-}
-
-
