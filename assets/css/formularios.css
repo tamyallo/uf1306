@@ -1,12 +1,118 @@
-.form {
+body main {
     width: 90%;
+    margin: 0 auto;
+}
+
+form.form {
+    display: inline-block;
+}
+
+form.form fieldset {
+    margin: 1em;
+    border-radius: 5px;
+}
+
+form.form fieldset legend {
+    margin: 1em;
+    margin-bottom: 0;
+    padding: 1em 1.5em;
+    border: 1px solid grey;
+    text-align: left;
+    font-weight: 700;
+    border-radius: 5px;
+    background: hsla(0, 0%, 100%, .6);
+    box-shadow: 0 0 30pt rgba(0, 0, 0, .25), 0 0 5pt rgba(0, 0, 0, .22);
+}
+
+form.form ul {
+    margin: 0;
+    padding: 2em;
+    list-style: none;
+}
+
+form.form ul li {
+    padding: 0.5em;
+    display: inline-block;
+}
+
+form.form input,
+form.form textarea {
+    margin-top: 1em;
+    padding: 0.2em 0.5em;
+    line-height: 2.5;
+}
+
+form.form input:focus,
+form.form textarea:focus {
+    outline: none;
+    background-color: lightyellow;
+}
+
+form.form input::placeholder,
+form.form textarea::placeholder {
+    color: lightgrey;
+}
+
+form.form input:focus::placeholder,
+form.form textarea:focus::placeholder {
+    color: transparent;
+}
+
+form.form p.info {
+    text-align: left;
+}
+
+form.form ul.enviar {
     text-align: center;
 }
 
-.form__field {
+form.form ul.enviar li {
+    display: inline-block;
+    padding: 1em 2em;
+}
+
+form.form ul.enviar li input {
+    padding: 1em 2em;
+    cursor: pointer;
+}
+
+form.form ul li.textarea {
+    display: block;
+}
+
+form.form ul li.textarea textarea {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+    margin-top: 1em;
+}
+
+form.form li.radio ul {
+    display: inline-block;
+    padding: 0;
+}
+
+
+form.form fieldset > ul > li > label,
+form.form fieldset > ul > li > strong {
+    display: block;
+    font-weight: bold;
+}
+
+form.form fieldset > ul > li > label[for="acepto"] a {
+    display: inline;
+}
+
+
+form.form p#errores {
+    display: none;
+    text-align: center;
+}
+
+form.form p#errores.success {
+    display: block;
+    color: green;
+}
+
+form.form p#errores.danger {
+    display: block;
+    color: tomato;
 }
